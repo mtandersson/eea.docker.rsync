@@ -2,10 +2,6 @@
   "extends": ["config:base"],
   "automerge": true,
   "rebaseWhen": "behind-base-branch",
-  "lockFileMaintenance": {
-    "enabled": true,
-    "schedule": ["after 7am every weekday and before 4pm every weekday"]
-  },
 
   "kubernetes": {
     "fileMatch": ["\\.yaml$"]
