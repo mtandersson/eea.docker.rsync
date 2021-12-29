@@ -1,11 +1,12 @@
 {
-  "extends": ["config:base"],
+  "extends": [
+    "config:base"
+  ],
+  "automergeType": "pr",
   "automerge": true,
   "rebaseWhen": "behind-base-branch",
-
-  "kubernetes": {
-    "fileMatch": ["\\.yaml$"]
-  },
   "timezone": "Europe/Madrid",
-  "prHourlyLimit": 8
+  "prHourlyLimit": 8,
+  "requiredStatusChecks": null,
+  "masterIssue": true
 }
