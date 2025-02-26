@@ -22,7 +22,7 @@ jobs:
           token: ${{ secrets.OWNER_TOKEN }}
           fetch-depth: 0 # Required to get tags
       - name: Set up QEMU
-        uses: docker/setup-qemu-action@v3.4.0
+        uses: docker/setup-qemu-action@v3.5.0
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3.10.0
       - name: Login to DockerHub
